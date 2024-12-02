@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генеалогічне дерево</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .tree-container {
+            position: relative;
+            width: 600px;
+        }
+        .tree-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal:target {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Генеалогічне дерево</h1>
+
+<div id="main" class="tree-container">
+    <img src="f_tree.png" usemap="#familyTree" alt="Генеалогічне дерево">
+    <map name="familyTree">
+        <area shape="rect" coords="255,40,345,90" href="#ya" alt="Я" tabindex="0">
+        <area shape="rect" coords="110,130,200,180" href="#tato" alt="Тато" tabindex="0">
+        <area shape="rect" coords="410,130,500,180" href="#mama" alt="Мама" tabindex="0">
+        <area shape="rect" coords="50,240,140,290" href="#dido1" alt="Дідусь (по татовій лінії)" tabindex="0">
+        <area shape="rect" coords="170,240,260,290" href="#babysa" alt="Бабуся (по татовій лінії)" tabindex="0">
+        <area shape="rect" coords="370,240,460,290" href="#dido2" alt="Дідусь (по маминій лінії)" tabindex="0">
+        <area shape="rect" coords="490,240,580,290" href="#babysa2" alt="Бабуся (по маминій лінії)" tabindex="0">
+        <area shape="rect" coords="20,340,90,390" href="#pradido1" alt="Прадідусь 1" tabindex="0">
+        <area shape="rect" coords="130,340,200,390" href="#prababysa1" alt="Прабабуся 1" tabindex="0">
+        <area shape="rect" coords="240,340,310,390" href="#pradido2" alt="Прадідусь 2" tabindex="0">
+        <area shape="rect" coords="350,340,420,390" href="#prababysa2" alt="Прабабуся 2" tabindex="0">
+        <area shape="rect" coords="460,340,530,390" href="#pradido3" alt="Прадідусь 3" tabindex="0">
+        <area shape="rect" coords="570,340,640,390" href="#prababysa3" alt="Прабабуся 3" tabindex="0">
+        <area shape="rect" coords="80,440,150,490" href="#pradido4" alt="Прадідусь 4" tabindex="0">
+        <area shape="rect" coords="190,440,260,490" href="#prababysa4" alt="Прабабуся 4" tabindex="0">
+    </map>
+</div>
+
+
+<div id="ya" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Я</h2>
+        <img src="me.png" alt="Я" width="200">
+    </div>
+</div>
+
+<div id="tato" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Тато</h2>
+        <img src="dad.png" alt="Тато" width="200">
+    </div>
+</div>
+
+<div id="mama" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Мама</h2>
+        <img src="mom.png" alt="Мама" width="200">
+    </div>
+</div>
+
+<div id="dido1" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Дідусь (по татовій лінії)</h2>
+        <img src="grandpa.png" alt="Дідусь (по татовій лінії)" width="200">
+    </div>
+</div>
+
+<div id="babysa" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Бабуся (по татовій лінії)</h2>
+        <img src="grandma.png" alt="Бабуся (по татовій лінії)" width="200">
+    </div>
+</div>
+
+<div id="dido2" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Дідусь (по маминій лінії)</h2>
+        <img src="grandpa1.png" alt="Дідусь (по маминій лінії)" width="200">
+    </div>
+</div>
+
+<div id="babysa2" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Бабуся (по маминій лінії)</h2>
+        <img src="grandma1.png" alt="Бабуся (по маминій лінії)" width="200">
+    </div>
+</div>
+
+<div id="pradido1" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прадідусь 1</h2>
+        <img src="great grandfather.png" alt="Прадідусь 1" width="200">
+    </div>
+</div>
+
+<div id="prababysa1" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прабабуся 1</h2>
+        <img src="great grandmother.png" alt="Прабабуся 1" width="200">
+    </div>
+</div>
+
+<div id="pradido2" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прадідусь 2</h2>
+        <img src="great grandfather.png" alt="Прадідусь 2" width="200">
+    </div>
+</div>
+
+<div id="prababysa2" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прабабуся 2</h2>
+        <img src="great grandmother.png" alt="Прабабуся 2" width="200">
+    </div>
+</div>
+
+<div id="pradido3" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прадідусь 3</h2>
+        <img src="great grandfather.png" alt="Прадідусь 3" width="200">
+    </div>
+</div>
+
+<div id="prababysa3" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прабабуся 3</h2>
+        <img src="great grandmother.png" alt="Прабабуся 3" width="200">
+    </div>
+</div>
+
+<div id="pradido4" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прадідусь 4</h2>
+        <img src="great grandfather.png" alt="Прадідусь 4" width="200">
+    </div>
+</div>
+
+<div id="prababysa4" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Прабабуся 4</h2>
+        <img src="great grandmother.png" alt="Прабабуся 4" width="200">
+    </div>
+</div>
+
+</body>
+</html>

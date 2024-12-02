@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея зображень</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .large-image {
+            width: 100%;
+            height: 400px; 
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .large-image input {
+            display: none;
+        }
+
+        .large-image label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .large-image img {
+            width: 100%;
+            height: auto;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            opacity: 0; 
+            transition: opacity 0.5s ease; 
+        }
+
+        .large-image input:checked + label img {
+            opacity: 1;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .thumbnails label {
+            flex: 1;
+            margin-right: 5px;
+        }
+
+        .thumbnails label:last-child {
+            margin-right: 0;
+        }
+
+        .thumbnails img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        .thumbnails img:hover {
+            border-color: #007bff; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="large-image">
+        <input type="radio" name="image" id="image1" checked>
+        <label for="image1">
+            <img src="big_picture_1.jpg" alt="Велике зображення 1">
+        </label>
+
+        <input type="radio" name="image" id="image2">
+        <label for="image2">
+            <img src="big_picture_2.jpg" alt="Велике зображення 2">
+        </label>
+
+        <input type="radio" name="image" id="image3">
+        <label for="image3">
+            <img src="big_picture_3.jpg" alt="Велике зображення 3">
+        </label>
+
+        <input type="radio" name="image" id="image4">
+        <label for="image4">
+            <img src="big_picture_4.jpg" alt="Велике зображення 4">
+        </label>
+
+        <input type="radio" name="image" id="image5">
+        <label for="image5">
+            <img src="big_picture_5.jpg" alt="Велике зображення 5">
+        </label>
+    </div>
+    <div class="thumbnails">
+        <label for="image1">
+            <img src="small_picture_1.jpg" alt="Маленьке зображення 1">
+        </label>
+        <label for="image2">
+            <img src="small_picture_2.jpg" alt="Маленьке зображення 2">
+        </label>
+        <label for="image3">
+            <img src="small_picture_3.jpg" alt="Маленьке зображення 3">
+        </label>
+        <label for="image4">
+            <img src="small_picture_4.jpg" alt="Маленьке зображення 4">
+        </label>
+        <label for="image5">
+            <img src="small_picture_5.jpg" alt="Маленьке зображення 5">
+        </label>
+    </div>
+</div>
+
+</body>
+    </style>
+</head>
+
+</html>

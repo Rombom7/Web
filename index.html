@@ -1,94 +1,90 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кузьма Роман</title>
+    <title>Power Bank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .powerbank-container {
+            width: 240px; 
+            background-color: #ffffff;
+            border: 2px solid #cccccc;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .powerbank-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .powerbank-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .powerbank-spec {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 5px;
+            font-size: 0.9em; 
+        }
+
+        .btn:hover {
+            background-color: rgba(76, 175, 80, 0.2); 
+        }
+
+        .btn-delete {
+            color: #f44336;
+            border: 2px solid #f44336;
+        }
+
+        .btn-delete:hover {
+            background-color: rgba(244, 67, 54, 0.2);
+        }
+    </style>
 </head>
 <body>
-    
-    <h1><br>Кілька  слів</br>про Кузьма Роман<hr></h1>
-    
-    <h2><b>Життя</b></h2>
-    <h3><strong>Козлів </strong></h3>
-    <p><i>Спогади</i> про  рідний <i>край</i>.</p>
-    <h4>Моє життєве кредо</h4>
-    <p title="pipipopo"> Не відкладай на <i>завтра</i> те що можна зробити <i>сьогодні</i>.<bdo title="Джон Максвелл">Важка праця - це скупчення легких справ,які ви не зробили, коли мали зробити.</bdo></p>
-    <h2>Коледж</h2>
-    <h3>Мої успіхи у коледжі</h3>
-    <p title="pipipopo">Здача сесії, здача екзамену. </p>
-    <h4>Мої розчарування в коледжі</h4>
-    <p title="pipipopo"> 2 зміна.</p>
-    <h5>Найяскравіші події студентського життя</h5>
-    <p>кінець першого курсу</p>
-    <h6>Мої надії в коледжі </h6>
-    <p title="pipipopo"><small> Зрозуміти у якому напрямку потрібно рухатися.</small></p>
-    <h2>Майбутнє</h2>
-    <h3>Мої надії на майбутнє</h3>
-    <p>Закінчення війни, найти роботу по спеціальності.</p>
-    <h4>Я … після 10 років </h4>
-    <p>Робата по спеціальності з достатнею заробтнію платою.</p> 
-    
-    
-        
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .cards {
-        display: flex;
-        gap: 10px;
-    }
-    .card {
-        border: 1px solid #000;
-        padding: 10px;
-        font-size: 24px;
-        text-align: center;
-        width: 50px;
-        height: 25px;
-        background-color: #f0f0f0; 
-    }
-    .hearts, .diams {
-        color: red;
-    }
-</style>
-
-    <pre>
-        <code>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;This is a title&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;p&gt;Hello world!&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-        </code>
-    </pre>
-
+    <div class="powerbank-container">
+        <img src="battery.png" alt="Power Bank" class="battery-image"> 
+        <h2 class="powerbank-title"><strong>Power Bank</strong></h2>
+        <p class="powerbank-spec">Виробник/Модель: Anker PowerCore 10000</p>
+        <p class="powerbank-spec">Ємність: 10000 мАгод</p>
+        <p class="powerbank-spec">Габарити: 92 x 60 x 22 мм</p>
+        <p class="powerbank-spec">Роз’єми: USB-A, USB-C</p>
+        <p class="powerbank-spec">Швидке заряджання: Так</p>
+        <div class="button-container">
+            <button class="btn">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+        </div>
+    </div>
 </body>
 </html>
-
-
-
-<h2>Player 1:</h2>
-    <div class="cards">
-        <div class="card">2 &spades;</div>
-        <div class="card hearts">9 &hearts;</div>
-        <div class="card hearts">6 &hearts;</div>
-        <div class="card diams">A &diams;</div>
-        <div class="card">Q &spades;</div>
-        <div class="card">J &clubs;</div>
-    </div>
-
-    <h2>Player 2:</h2>
-    <div class="cards">
-        <div class="card diams">3 &diams;</div>
-        <div class="card clubs">A &clubs;</div>
-        <div class="card">10 &spades;</div>
-        <div class="card hearts">K &hearts;</div>
-        <div class="card">8 &spades;</div>
-        <div class="card hearts">3 &hearts;</div>
-    </div>
