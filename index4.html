@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+       
+        .progress-bar-container {
+            width: 10%;
+            height: 20px;
+            border-radius: 20px;
+            border: 2px solid #6fb5fc;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+        }
+
+      
+        .progress-bar {
+            width: 50%;
+            height: 100%;
+            background-color: #6fb5fc;
+            border-radius: 20px;
+            position: absolute;
+            animation: move 4s linear infinite;
+        }
+
+       
+        @keyframes move {
+            0% {
+                transform: translateX(-200%);
+            }
+            50% {
+                transform: translateX(200%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+       
+        .progress-bar-1 {
+            animation-delay: 0s;
+        }
+        .progress-bar-2 {
+            animation-delay: 0.5s;
+        }
+        .progress-bar-3 {
+            animation-delay: 1s;
+        }
+        .progress-bar-4 {
+            animation-delay: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar progress-bar-1"></div>
+    </div>
+    
+    <div class="progress-bar-container">
+        <div class="progress-bar progress-bar-2"></div>
+    </div>
+    
+    <div class="progress-bar-container">
+        <div class="progress-bar progress-bar-3"></div>
+    </div>
+    
+    <div class="progress-bar-container">
+        <div class="progress-bar progress-bar-4"></div>
+    </div>
+</body>
+</html>

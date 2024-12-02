@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Arrow on Arc</title>
+    <style>
+        .spinner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .spinner {
+            width: 100px;
+            height: 100px;
+            border: 6px dashed #4a90e2;
+            border-top: 6px solid #4a90e2;
+            border-radius: 50%;
+            animation: rotate 2s linear infinite; 
+            position: relative; 
+        }
+
+        .arrow {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #4a90e2; 
+            left: 50%; 
+            top: -15px; 
+            transform: translateX(-50%) rotate(135deg); 
+            transform-origin: 50% 100%; 
+            animation: lead-arrow 2s linear infinite; 
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes lead-arrow {
+            0% {
+                transform: translateX(-50%) rotate(135deg); 
+            }
+            100% {
+                transform: translateX(-50%) rotate(495deg); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner-container">
+        <div class="spinner">
+            <div class="arrow"></div> 
+        </div>
+    </div>
+</body>
+</html>
