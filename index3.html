@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+        }
+
+        
+        li:nth-child(odd) {
+            background-color: #b3d9ff;
+        }
+
+        li:nth-child(even) {
+            background-color: #a0c4ff;
+        }
+
+        
+        li.completed {
+            background-color: #d3d3d3;
+            text-decoration: line-through;
+        }
+
+        li.completed::before {
+            content: '✓';
+            margin-right: 10px;
+        }
+
+        
+        li::after {
+            content: '✗';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>My To Do List</h1>
+    <ul>
+        <li><span>Hit the gym</span></li>
+        <li><span>Pay bills</span></li>
+        <li class="completed"><span>Meet John</span></li>
+        <li class="completed"><span>Buy eggs</span></li>
+        <li><span>Read a book</span></li>
+        <li><span>Organize office</span></li>
+        <li><span>Eat dinner</span></li>
+        <li><span>Buy apples</span></li>
+        <li><span>Meet George</span></li>
+        <li class="completed"><span>Feed the cat</span></li>
+        <li><span>Write a letter</span></li>
+        <li><span>Run 1 km</span></li>
+    </ul>
+</body>
+</html>

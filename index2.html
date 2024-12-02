@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons List</title>
+    <style>
+        ul {
+            list-style: none; 
+            padding-left: 0; 
+        }
+
+        ul li {
+            margin-bottom: 10px; 
+            font-size: 18px;
+        }
+
+        ul ul li {
+            margin-left: 20px; 
+        }
+
+        
+        .winter:before {
+            content: "❄️"; 
+            margin-right: 10px;
+        }
+
+        .spring:before {
+            content: "🍃"; 
+            margin-right: 10px;
+        }
+
+        .summer:before {
+            content: "☀️"; 
+            margin-right: 10px;
+        }
+
+        .autumn:before {
+            content: "🍂";
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Winter
+            <ul>
+                <li class="winter">December</li>
+                <li class="winter">January</li>
+                <li class="winter">February</li>
+            </ul>
+        </li>
+        <li>Spring
+            <ul>
+                <li class="spring">March</li>
+                <li class="spring">April</li>
+                <li class="spring">May</li>
+            </ul>
+        </li>
+        <li>Summer
+            <ul>
+                <li class="summer">June</li>
+                <li class="summer">July</li>
+                <li class="summer">August</li>
+            </ul>
+        </li>
+        <li>Autumn
+            <ul>
+                <li class="autumn">September</li>
+                <li class="autumn">October</li>
+                <li class="autumn">November</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
