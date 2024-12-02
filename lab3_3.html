@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 1000px;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: rgb(29 104 176);
+            color: white;
+        }
+
+        tr td:nth-last-child(2) {
+            width: 100px;
+        }
+
+        .size {
+            background-color: rgb(34 125 190);
+            height: 30px;
+            border-radius: 100px;
+            text-align: center;
+            padding-top: 10px;
+            width: 80px;
+            margin-left: 10px;
+            color: white;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgb(208 229 246);
+        }
+
+        tr:hover {
+            background-color: rgb(193 222 255);
+        }
+
+        tbody tr:nth-child(2n):hover {
+            background-color: rgb(193 222 255);
+        }
+
+        p {
+          font-size: small;  
+          color: grey;
+        }
+
+        .Priority {
+            text-align: center;
+            background-color: rgb(34 125 190);
+            width: 40px;
+            height: 30px;
+            border-radius: 30px;
+            margin-left: 30px;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Created at</th>
+                <th>Size</th>
+                <th>Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#1078</td>
+                <td>Allow emailing within the system <p>Updated at 22/01/2024</p></td>
+                <td>Development</td>
+                <td>January 22, 2024 <p>10:15</p></td>
+                <td><div class="size"> Big</div></td>
+                <td><div class="Priority">4</div></td>
+            </tr>
+            <tr>
+                <td>#2034</td>
+                <td>Allow emailing within the system <p>Updated at 21/01/2024</p></td>
+                <td>Development</td>
+                <td>January 21, 2024 <p>13:30</p></td>
+                <td><div class="size">Small</div></td>
+                <td><div class="Priority" style="background-color: rgb(0 155 0);">3</div></td>
+            </tr>
+            <tr>
+                <td>#2165</td>
+                <td>Allow emailing within the system <p>Updated at 20/01/2024</p></td>
+                <td>Development</td>
+                <td>January 20, 2024 <p>16:00</p></td>
+                <td><div class="size">Middle</div></td>
+                <td><div class="Priority" style="background-color: rgb(206 56 51);">1</div></td>
+            </tr>
+            <tr>
+                <td>#2214</td>
+                <td>Allow emailing within the system <p>Updated at 19/01/2024</p></td>
+                <td>Development</td>
+                <td>January January 19, 2024 <p>12:00</p></td>
+                <td><div class="size">Over</div></td>
+                <td><div class="Priority" style="background-color: rgb(0 36 108);">5</div></td>
+            </tr>
+            <tr>
+                <td>#2345</td>
+                <td>Allow emailing within the system <p>Updated at 18/01/2024</p></td>
+                <td>Development</td>
+                <td>January 17, 2024 <p>15:00</p></td>
+                <td><div class="size">Big</div></td>
+                <td><div class="Priority">4</div></td>
+            </tr>
+            <tr>
+                <td>#3377</td>
+                <td>Allow emailing within the system <p>Updated at 17/01/2024</p></td>
+                <td>Development</td>
+                <td>January 16, 2024 <p>10:00</p></td>
+                <td><div class="size">Middle</div></td>
+                <td><div class="Priority" style="background-color: rgb(0 155 0);">3</div></td>
+            </tr>
+            <tr>
+                <td>#3508</td>
+                <td>Allow emailing within the system <p>Updated at 16/01/2024</p></td>
+                <td>Development</td>
+                <td>January 15, 2024 <p>9:00</p></td>
+                <td><div class="size">Middle</div></td>
+                <td><div class="Priority" style="background-color: rgb(184 111 0);">2</div></td>
+            </tr>
+            <tr>
+                <td>#3544</td>
+                <td>Allow emailing within the system <p>Updated at 15/01/2024</p></td>
+                <td>Development</td>
+                <td>January 15, 2024 <p>8:00</p></td>
+                <td><div class="size">Small</div></td>
+                <td><div class="Priority" style="background-color: rgb(206 56 51);">1</div></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

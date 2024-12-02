@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table th:nth-child(-n+2), table td:nth-child(-n+2), .one {
+            background-color: rgb(208, 217, 239);
+            text-align: center;
+        }
+
+        table th, table td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .border {
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>День<br> тижня</th>
+                <th>Па- <br> ра</th>
+                <th class="one">Тиж- <br>день</th>
+                <th>Марціяш Г.Я. <br> КІ - 421</th>
+                <th>Ауд. <br>(1)</th>
+                <th>Ауд. <br>(2)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">П<br>О<br>Н<br>Е<br>Д<br>І<br>Л<br>О<br>К</td>
+                <td>3</td>
+                <td class="one">|<hr class="border">||</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>|<hr class="border">||</td>
+                <td>Охорони праці та БЖД<br>Брояк</td>
+                <td>205в</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>|<hr class="border">||</td>
+                <td>політологія<br>Черниш</td>
+                <td>302</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>|<hr class="border">||</td>
+                <td>Технології захисту інформації<br>Радчик</td>
+                <td>315</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>|<hr class="border">||</td>
+                <td></td><td></td><td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
